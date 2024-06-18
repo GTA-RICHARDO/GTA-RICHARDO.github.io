@@ -82,6 +82,7 @@ nav .circle{
     color: white;
     border-radius: 5px;
     box-shadow: 10px 10px 10px black;
+    cursor: default;
 }
 .time #duration{
     padding: 10px 20px;
@@ -89,6 +90,7 @@ nav .circle{
     color: white;
     border-radius: 5px;
     box-shadow: 10px 10px 10px black;
+    cursor: default;
 }
 
 .controls{
