@@ -1,15 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-
+    
     box-sizing: border-box;
 }
 body{
+    background-color: black;
     font-family: 'Permanent Marker', cursive;;
 }
 .container {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: black;
     display: flex;
     flex-direction: column; /* Align items vertically */
@@ -19,7 +20,7 @@ body{
     background-image: url('media/richard.jpg');
     background-size: contain; /* Cover the entire container */
     background-position: center; /* Center the background image */
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
 }
 
 .title {
@@ -59,18 +60,16 @@ body{
     text-decoration: none; /* Remove underline */
     padding: 5px 10px; /* Add padding to the links */
     font-size: 25px;
-    
 }
 
 /* Media Queries */
 @media (max-width: 767px) {
-    *{
-    }
     .container{
-        display: flex;
-        background-image: cover;
-        background-size: 100vh;
-        height: 100vh;
+        height: auto; /* Allow height to adjust based on content */
+        padding: 20px; /* Add some padding */
+        background-size: cover;
+        background-repeat: repeat-y;
+
     }
     .music-container{
         width: 80%;
