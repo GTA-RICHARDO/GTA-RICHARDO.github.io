@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Permanent Marker', cursive;;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items at the top */
+    color: white;
+    background-image: url('media/richard.jpg');
+    background-size: contain; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+}
+
+.title {
+    color: white;
+    -webkit-text-stroke: 1px black;
+    width: 90%; /* Adjusted width */
+    max-width: 400px; /* Added max-width to limit width on larger screens */
+    padding: 25px 35px;
+    text-align: center;
+    border-radius: 20px;
+    /* Add margin at the bottom */
+}
+
+.music-container {
+    display: flex;
+    width: 60%;
+    justify-content: center; /* Center the music player */
+    flex-grow: 10; /* Allow the container to grow to fill remaining space */
+    margin-top: 12rem; /* Adjusted margin for smaller screens */
+}
+
+.music-player {
+    width: 90%; /* Adjusted width */
+     /* Added max-width to limit width on larger screens */
+    padding: 25px 35px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.music-player a {
+    display: block;
+    margin-bottom: 2px; /* Add some bottom margin between the lines */
+    -webkit-text-stroke: 1px black;
+    color: red; /* Set link color */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px; /* Add padding to the links */
+    font-size: 25px;
+    
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    *{
+    }
+    .container{
+        display: flex;
+        background-image: cover;
+        background-size: 100vh;
+        height: 100vh;
+    }
+    .music-container{
+        width: 80%;
+        margin-top: 0;
+    }
+    .music-player {
+        margin-top: 25%;
+        width: 100%; /* Reset width for larger screens */
+    }
+    .music-player a{
+        font-size: 1.3rem;
+    }
+}

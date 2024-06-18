@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="music.css">
+    <script src="https://kit.fontawesome.com/3ea0746e34.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <div onclick="directTohome()"><i class="fa-solid fa-angle-left"></i></div>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+            <img src="media/richard.jpg" class="song-img">
+            <h1>GTA IN REAL LIFE</h1>
+            <p>RICHARDO</p>
+
+            <audio id="song">
+                <source src="music/Gta In Real Life - Gta Richardo.wav" type="audio/mpeg">
+            </audio>
+
+            <input type="range" value="0" id="progress">
+            <div class="time">
+                <div id="current-time">0:00</div>
+                <div id="duration">0:00</div>
+            </div>
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+            <div class="download-link">
+                <a href="music/Gta In Real Life - Gta Richardo.wav" download="GTA IN REAL LIFE(Official Music Video).mp3">Download Audio</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
