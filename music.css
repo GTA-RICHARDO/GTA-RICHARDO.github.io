@@ -34,6 +34,7 @@ nav .circle{
     background: #fff;
     color: black;
     box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+    cursor: pointer;
 }
 .song-img{
     width: 220px;
